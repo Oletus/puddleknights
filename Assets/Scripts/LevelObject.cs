@@ -12,9 +12,14 @@ public class LevelObject : MonoBehaviour
         }
     }
 
+    private int VerticalLayer;  // This will offset the object vertically if it's standing on top of cape layers.
+
     [SerializeField] private GameObject _RotationPivot;
     protected GameObject RotationPivot { get { return _RotationPivot; } }
 
     [SerializeField] private bool _IsObstacle = false;
     public bool IsObstacle { get { return _IsObstacle; } }
+
+    [SerializeField] private bool _IsAboveGround = false;
+    public bool IsAboveGround { get { return _IsAboveGround; } }
 }

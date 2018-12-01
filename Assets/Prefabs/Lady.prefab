@@ -260,3 +260,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RotationPivot: {fileID: 5714147900781571177}
   _IsObstacle: 1
+  _IsAboveGround: 1

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RotationPivot: {fileID: 8058133956582235397}
   _IsObstacle: 0
+  _IsAboveGround: 1
 --- !u!1 &8058133956582235397
 GameObject:
   m_ObjectHideFlags: 0
