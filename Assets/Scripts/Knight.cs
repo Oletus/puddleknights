@@ -55,12 +55,12 @@ public class Knight : CapeTile, ControllableCharacter
         {
             return;
         }
-        if (!Level.IsTileFree(this.MinCorner + direction))
+        if (!Level.IsTileFree(this.TileCoordinates + direction))
         {
             return;
         }
 
-        MoveCape(Level.GetTopVerticalLayer(this.MinCorner + direction) + 1, direction);
+        MoveCape(Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
     }
 }

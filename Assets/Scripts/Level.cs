@@ -26,7 +26,7 @@ public class Level : MonoBehaviour
         List<LevelObject> objs = new List<LevelObject>();
         foreach ( LevelObject obj in LevelObjects )
         {
-            if ( obj.MinCorner.x == coords.x && obj.MinCorner.z == coords.z )
+            if ( obj.TileCoordinates.x == coords.x && obj.TileCoordinates.z == coords.z )
             {
                 objs.Add(obj);
             }
@@ -53,7 +53,7 @@ public class Level : MonoBehaviour
     {
         foreach ( LevelObject obj in LevelObjects )
         {
-            IEnumerable<LevelObject> tileObjects = GetObjectsAt(obj.MinCorner).OrderBy(objA => objA.VerticalLayer);
+            IEnumerable<LevelObject> tileObjects = GetObjectsAt(obj.TileCoordinates).OrderBy(objA => objA.VerticalLayer);
             {
                 int layer = 0;
                 foreach ( LevelObject tileObj in tileObjects )

@@ -8,12 +8,12 @@ public class Lady : LevelObject, ControllableCharacter
 
     public void TryMove(Vector3Int direction)
     {
-        if ( !Level.IsTileSuitableForLady(this.MinCorner + direction) )
+        if ( !Level.IsTileSuitableForLady(this.TileCoordinates + direction) )
         {
             return;
         }
 
-        VerticalLayer = Level.GetTopVerticalLayer(this.MinCorner + direction) + 1;
+        VerticalLayer = Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1;
         this.transform.position = Vector3Int.RoundToInt(this.transform.position + direction);
 
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);

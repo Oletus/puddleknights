@@ -16,7 +16,7 @@ public class LevelObject : MonoBehaviour
     }
 
     // Integer coordinates for the corner of this object that has the smallest x and z coordinates.
-    public Vector3Int MinCorner {
+    public Vector3Int TileCoordinates {
         get
         {
             return Vector3Int.RoundToInt(transform.position);
@@ -33,8 +33,11 @@ public class LevelObject : MonoBehaviour
         }
         set
         {
-            _VerticalLayer = value;
-            this.transform.position = new Vector3(this.transform.position.x, _VerticalLayer * CAPE_THICKNESS, this.transform.position.z);
+            if ( this.IsAboveGround )
+            {
+                _VerticalLayer = value;
+                this.transform.position = new Vector3(this.transform.position.x, _VerticalLayer * CAPE_THICKNESS, this.transform.position.z);
+            }
         }
     }
 
