@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class LevelObject : MonoBehaviour
 {
+    private const float CAPE_THICKNESS = 0.1f;
+
+    protected Level Level;
+
+    protected virtual void Awake()
+    {
+        Level = GetComponentInParent<Level>();
+    }
+
     // Integer coordinates for the corner of this object that has the smallest x and z coordinates.
     public Vector3Int MinCorner {
         get
@@ -12,7 +21,20 @@ public class LevelObject : MonoBehaviour
         }
     }
 
-    private int VerticalLayer;  // This will offset the object vertically if it's standing on top of cape layers.
+    // This will offset the object vertically if it's standing on top of cape layers.
+    private int _VerticalLayer = 0;
+    public int VerticalLayer
+    {
+        get
+        {
+            return _VerticalLayer;
+        }
+        set
+        {
+            _VerticalLayer = value;
+            this.transform.position = new Vector3(this.transform.position.x, _VerticalLayer * CAPE_THICKNESS, this.transform.position.z);
+        }
+    }
 
     [SerializeField] private GameObject _RotationPivot;
     protected GameObject RotationPivot { get { return _RotationPivot; } }

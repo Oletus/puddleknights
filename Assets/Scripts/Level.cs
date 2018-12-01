@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Level : MonoBehaviour
 {
@@ -31,6 +32,40 @@ public class Level : MonoBehaviour
             }
         }
         return objs;
+    }
+
+    // Get the topmost vertical layer that's taken by an object in the tile indicated by coords. If no layers are taken, returns -1.
+    public int GetTopVerticalLayer(Vector3Int coords)
+    {
+        IEnumerable<LevelObject> objects = GetObjectsAt(coords).OrderBy(obj => obj.VerticalLayer);
+        int top = -1;
+        foreach ( LevelObject obj in objects )
+        {
+            if ( obj.IsAboveGround )
+            {
+                top = Mathf.Max(top, obj.VerticalLayer);
+            }
+        }
+        return top;
+    }
+
+    public void DropAllVerticalLayers()
+    {
+        foreach ( LevelObject obj in LevelObjects )
+        {
+            IEnumerable<LevelObject> tileObjects = GetObjectsAt(obj.MinCorner).OrderBy(objA => objA.VerticalLayer);
+            {
+                int layer = 0;
+                foreach ( LevelObject tileObj in tileObjects )
+                {
+                    if (tileObj.IsAboveGround)
+                    {
+                        tileObj.VerticalLayer = layer;
+                        ++layer;
+                    }
+                }
+            }
+        }
     }
 
     public bool IsTileFree(Vector3Int coords)

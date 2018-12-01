@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Knight : CapeTile, ControllableCharacter
 {
-    private Level Level;
-
     [SerializeField] private List<Vector2Int> CapePieceOffsets;
 
     [SerializeField] private GameObject CapePrefab;
 
     [SerializeField] private bool CanGoBackwardsWhenCaped = false;
 
-    public void Awake()
+    protected override void Awake()
     {
-        Level = GetComponentInParent<Level>();
+        base.Awake();
         SpawnCapePieces();
     }
 
@@ -60,7 +58,7 @@ public class Knight : CapeTile, ControllableCharacter
             return;
         }
 
-        MoveCape(direction);
+        MoveCape(Level.GetTopVerticalLayer(this.MinCorner + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
     }
 }
