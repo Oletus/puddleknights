@@ -10,6 +10,8 @@ public class Knight : CapeTile, ControllableCharacter
 
     [SerializeField] private GameObject CapePrefab;
 
+    [SerializeField] private bool CanGoBackwardsWhenCaped = false;
+
     public void Awake()
     {
         Level = GetComponentInParent<Level>();
@@ -49,6 +51,10 @@ public class Knight : CapeTile, ControllableCharacter
 
     public void TryMove(Vector3Int direction)
     {
+        if ( !CanGoBackwardsWhenCaped && this.NextCapePiece != null && Vector3.Angle(this.RotationPivot.transform.forward, direction) > 170.0f)
+        {
+            return;
+        }
         if (!Level.IsTileFree(this.MinCorner + direction))
         {
             return;
