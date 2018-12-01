@@ -227,5 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
+  _IsAboveGround: 0
