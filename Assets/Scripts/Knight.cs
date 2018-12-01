@@ -59,6 +59,10 @@ public class Knight : CapeTile, ControllableCharacter
         {
             return;
         }
+        if (this.NextCapePiece != null && this.NextCapePiece.HasLadyOnTop())
+        {
+            return;
+        }
 
         MoveCape(Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);

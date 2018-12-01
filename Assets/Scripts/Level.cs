@@ -104,6 +104,32 @@ public class Level : MonoBehaviour
         return !hadPuddle || hadCape;
     }
 
+    public bool IsLadyInTile(Vector3Int coords)
+    {
+        List<LevelObject> objects = GetObjectsAt(coords);
+        foreach ( LevelObject obj in objects )
+        {
+            if (obj.GetComponent<Lady>())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool IsKnightInTile(Vector3Int coords)
+    {
+        List<LevelObject> objects = GetObjectsAt(coords);
+        foreach ( LevelObject obj in objects )
+        {
+            if ( obj.GetComponent<Knight>() )
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void SwitchCharacter()
     {
         currentCharacterIndex = (currentCharacterIndex + 1) % Characters.Count;

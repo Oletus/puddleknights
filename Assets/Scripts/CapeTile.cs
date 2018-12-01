@@ -23,4 +23,17 @@ public class CapeTile : LevelObject
             Level.DropAllVerticalLayers();
         }
     }
+
+    public bool HasLadyOnTop()
+    {
+        if ( Level.IsLadyInTile(this.TileCoordinates) )
+        {
+            return true;
+        }
+        if ( NextCapePiece != null )
+        {
+            return NextCapePiece.HasLadyOnTop();
+        }
+        return false;
+    }
 }
