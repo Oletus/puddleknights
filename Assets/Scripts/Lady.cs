@@ -13,8 +13,9 @@ public class Lady : LevelObject, ControllableCharacter
             return;
         }
 
-        VerticalLayer = Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1;
+        int newVerticalLayer = Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1;
         this.transform.position = Vector3Int.RoundToInt(this.transform.position + direction);
+        VerticalLayer = newVerticalLayer;
 
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
     }
