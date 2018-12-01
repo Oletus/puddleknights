@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knight : LevelObject, ControllableCharacter
+public class Lady : LevelObject, ControllableCharacter
 {
-    CapeTile capeStart;
-
     Level Level;
 
     public void Awake()
@@ -15,7 +13,7 @@ public class Knight : LevelObject, ControllableCharacter
 
     public void TryMove(Vector3Int direction)
     {
-        if (!Level.IsTileFree(this.MinCorner + direction))
+        if ( !Level.IsTileSuitableForLady(this.MinCorner + direction) )
         {
             return;
         }
