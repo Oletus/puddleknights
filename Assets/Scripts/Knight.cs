@@ -42,7 +42,7 @@ public class Knight : CapeTile, ControllableCharacter
         CapeTile capeOwner = this;
         foreach (Vector2Int offset in CapePieceOffsets)
         {
-            capeOwner.NextCapePiece = Instantiate(CapePrefab, capeOwner.transform.position + CapeOffsetToWorldSpace(offset), Quaternion.identity).GetComponent<CapeTile>();
+            capeOwner.NextCapePiece = Instantiate(CapePrefab, capeOwner.transform.position + CapeOffsetToWorldSpace(offset), Quaternion.identity, Level.transform).GetComponent<CapeTile>();
             capeOwner = capeOwner.NextCapePiece;
         }
     }

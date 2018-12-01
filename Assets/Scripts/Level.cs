@@ -20,15 +20,25 @@ public class Level : MonoBehaviour
         ChosenCharacter = Characters[currentCharacterIndex];
     }
 
+    private List<LevelObject> GetObjectsAt(Vector3Int coords)
+    {
+        List<LevelObject> objs = new List<LevelObject>();
+        foreach ( LevelObject obj in LevelObjects )
+        {
+            if ( obj.MinCorner.x == coords.x && obj.MinCorner.z == coords.z )
+            {
+                objs.Add(obj);
+            }
+        }
+        return objs;
+    }
+
     public bool IsTileFree(Vector3Int coords)
     {
-        foreach (LevelObject obj in LevelObjects )
+        List<LevelObject> objects = GetObjectsAt(coords);
+        foreach ( LevelObject obj in objects )
         {
-            if (!obj.IsObstacle)
-            {
-                continue;
-            }
-            if (obj.MinCorner.x == coords.x && obj.MinCorner.z == coords.z)
+            if (obj.IsObstacle)
             {
                 return false;
             }
@@ -38,7 +48,25 @@ public class Level : MonoBehaviour
 
     public bool IsTileSuitableForLady(Vector3Int coords)
     {
-        return IsTileFree(coords);
+        List<LevelObject> objects = GetObjectsAt(coords);
+        bool hadPuddle = false;
+        bool hadCape = false;
+        foreach ( LevelObject obj in objects )
+        {
+            if ( obj.IsObstacle )
+            {
+                return false;
+            }
+            if (obj.GetComponent<Puddle>())
+            {
+                hadPuddle = true;
+            }
+            if (obj.GetComponent<CapeTile>())
+            {
+                hadCape = true;
+            }
+        }
+        return !hadPuddle || hadCape;
     }
 
     public void SwitchCharacter()
