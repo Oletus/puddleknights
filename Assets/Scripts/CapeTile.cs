@@ -6,6 +6,12 @@ public class CapeTile : LevelObject
 {
     [System.NonSerialized] public CapeTile NextCapePiece;
 
+    private void SnapNextCapePiece()
+    {
+        // TODO: Sound / VFX?
+        NextCapePiece = null;
+    }
+
     protected void MoveCape(int newVerticalLayer, Vector3Int direction)
     {
         Vector3 myOldPosition = transform.position;
@@ -16,12 +22,25 @@ public class CapeTile : LevelObject
 
         if ( NextCapePiece != null )
         {
-            NextCapePiece.MoveCape(oldVerticalLayer, Vector3Int.RoundToInt(myOldPosition - NextCapePiece.transform.position));
+            if ( NextCapePiece.IsWeightOnTop() )
+            {
+                SnapNextCapePiece();
+                Level.DropAllVerticalLayers();
+            }
+            else
+            {
+                NextCapePiece.MoveCape(oldVerticalLayer, Vector3Int.RoundToInt(myOldPosition - NextCapePiece.transform.position));
+            }
         }
         else
         {
             Level.DropAllVerticalLayers();
         }
+    }
+
+    private bool IsWeightOnTop()
+    {
+        return Level.IsWeightInTile(this.TileCoordinates);
     }
 
     public bool HasLadyOnTop()

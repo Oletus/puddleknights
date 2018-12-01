@@ -117,7 +117,7 @@ public class Level : MonoBehaviour
         return false;
     }
 
-    public bool IsKnightInTile(Vector3Int coords)
+    public bool IsWeightInTile(Vector3Int coords)
     {
         List<LevelObject> objects = GetObjectsAt(coords);
         foreach ( LevelObject obj in objects )
