@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Lady : LevelObject, ControllableCharacter
 {
+    public Vector3 SelectedIndicatorPosition { get { return SelectedIndicatorMarker.transform.position; } }
+
     public void TryMove(Vector3Int direction)
     {
         if ( !Level.IsTileSuitableForLady(this.MinCorner + direction) )

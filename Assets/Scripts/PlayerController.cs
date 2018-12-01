@@ -8,6 +8,15 @@ public class PlayerController : MonoBehaviour
 
     public Level Level;
 
+    [SerializeField] private GameObject SelectedIndicatorPrefab;
+
+    private GameObject SelectedIndicator;
+
+    public void Awake()
+    {
+        SelectedIndicator = Instantiate(SelectedIndicatorPrefab);
+    }
+
     public void Update()
     {
         if ( Level != null )
@@ -37,5 +46,10 @@ public class PlayerController : MonoBehaviour
                 Character.TryMove(Vector3Int.right);
             }
         }
+    }
+
+    private void LateUpdate()
+    {
+        SelectedIndicator.transform.position = Level.ChosenCharacter.SelectedIndicatorPosition;
     }
 }

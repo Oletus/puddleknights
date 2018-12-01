@@ -8,6 +8,8 @@ public class LevelObject : MonoBehaviour
 
     protected Level Level;
 
+    [SerializeField] protected GameObject SelectedIndicatorMarker;
+
     protected virtual void Awake()
     {
         Level = GetComponentInParent<Level>();

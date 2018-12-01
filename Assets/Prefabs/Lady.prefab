@@ -182,6 +182,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4048229668992532527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9195685676753425777}
+  m_Layer: 0
+  m_Name: SelectedIndicatorMarker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9195685676753425777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048229668992532527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3629635629038834747}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5714147900781571177
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +241,7 @@ Transform:
   m_Children:
   - {fileID: 8775594635630393373}
   - {fileID: 4305699110659274128}
+  - {fileID: 9195685676753425777}
   m_Father: {fileID: 4691624248022637332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -258,6 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cff2b138686e74045a5301f19924e06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 4048229668992532527}
   _RotationPivot: {fileID: 5714147900781571177}
   _IsObstacle: 1
   _IsAboveGround: 1

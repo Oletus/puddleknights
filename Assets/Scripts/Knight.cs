@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Knight : CapeTile, ControllableCharacter
 {
+    public Vector3 SelectedIndicatorPosition { get { return SelectedIndicatorMarker.transform.position; } }
+
     [SerializeField] private List<Vector2Int> CapePieceOffsets;
 
     [SerializeField] private GameObject CapePrefab;
