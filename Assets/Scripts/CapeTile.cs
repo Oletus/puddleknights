@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CapeTile : LevelObject
 {
-    CapeTile Next;
+    [System.NonSerialized] public CapeTile NextCapePiece;
 
-    public void Move(Vector3Int direction)
+    protected void MoveCape(Vector3Int direction)
     {
-        Vector3 oldPosition = transform.position;
+        Vector3 myOldPosition = transform.position;
         transform.position += direction;
-        Next.transform.position = oldPosition;
+        if ( NextCapePiece != null )
+        {
+            NextCapePiece.MoveCape(Vector3Int.RoundToInt(myOldPosition - NextCapePiece.transform.position));
+        }
     }
 }

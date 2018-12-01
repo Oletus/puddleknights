@@ -478,6 +478,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapePieceOffsets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapePieceOffsets.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapePieceOffsets.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapePieceOffsets.Array.data[0].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapePieceOffsets.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c971f98b6cf903e4a89e352ea15e2605, type: 3}
 --- !u!4 &583388872 stripped

@@ -352,3 +352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RotationPivot: {fileID: 5934875992049122908}
   _IsObstacle: 1
+  CapePieceOffsets: []
+  CapePrefab: {fileID: 3970258963493783363, guid: 3910c312206d7b345b30f378533b273f,
+    type: 3}
