@@ -17,5 +17,4 @@ public class LevelObject : MonoBehaviour
 
     [SerializeField] private bool _IsObstacle = false;
     public bool IsObstacle { get { return _IsObstacle; } }
-
 }

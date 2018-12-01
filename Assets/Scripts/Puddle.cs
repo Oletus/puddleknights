@@ -2,19 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puddle : MonoBehaviour
+public class Puddle : LevelObject
 {
-    public bool Covered = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
