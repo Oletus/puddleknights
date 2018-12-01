@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
@@ -493,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a7f4550c03dcd4cb056e6ac973e626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 1
   _IsAboveGround: 0
@@ -520,6 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
@@ -680,6 +683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: {fileID: 1904144778}
+  SelectedIndicatorPrefab: {fileID: 5326068993344188617, guid: 211172a44c0c4b14e9da6b2837c0ef34,
+    type: 3}
 --- !u!1001 &539144792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -822,6 +827,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: CapePieceOffsets.Array.size
@@ -856,31 +886,6 @@ PrefabInstance:
         type: 3}
       propertyPath: CapePieceOffsets.Array.data[2].y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c971f98b6cf903e4a89e352ea15e2605, type: 3}
@@ -983,6 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
@@ -1523,6 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
@@ -1700,6 +1707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a7f4550c03dcd4cb056e6ac973e626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 1
   _IsAboveGround: 0
@@ -2163,6 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
@@ -2265,6 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db0b01242076f241b5387f0cfaa3b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0

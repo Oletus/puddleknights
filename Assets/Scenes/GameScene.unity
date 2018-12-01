@@ -392,6 +392,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: {fileID: 1904144778}
+  SelectedIndicatorPrefab: {fileID: 5326068993344188617, guid: 211172a44c0c4b14e9da6b2837c0ef34,
+    type: 3}
 --- !u!1001 &583388871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,8 +612,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a7f4550c03dcd4cb056e6ac973e626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
   _RotationPivot: {fileID: 0}
   _IsObstacle: 1
+  _IsAboveGround: 0
 --- !u!1001 &1389830864
 PrefabInstance:
   m_ObjectHideFlags: 0
