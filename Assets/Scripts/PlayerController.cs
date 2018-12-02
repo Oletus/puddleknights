@@ -61,6 +61,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnUp()
+    {
+        OnDirectionInput(Vector2Int.up);
+    }
+
+    public void OnDown()
+    {
+        OnDirectionInput(Vector2Int.down);
+    }
+
+    public void OnRight()
+    {
+        OnDirectionInput(Vector2Int.right);
+    }
+
+    public void OnLeft()
+    {
+        OnDirectionInput(Vector2Int.left);
+    }
+
+    public void OnReset()
+    {
+        GameManager.instance.Level.Reset();
+    }
+
+    public void OnUndo()
+    {
+        GameManager.instance.Level.Undo();
+    }
+
     private void OnDirectionInput(Vector2Int direction)
     {
         Level level = GameManager.instance.Level;
