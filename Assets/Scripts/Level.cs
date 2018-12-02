@@ -151,4 +151,10 @@ public class Level : MonoBehaviour
     {
         History.Undo(LevelObjects);
     }
+
+    public void Reset()
+    {
+        History.Reset(LevelObjects);
+        CommitToUndoHistory();
+    }
 }
