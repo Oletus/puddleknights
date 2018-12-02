@@ -112,27 +112,95 @@ public class CapeTile : LevelObject
         }
         if (GeometryVariant == PieceGeometryVariant.END)
         {
-            CurrentPieceModel = PieceEnd;
+            if ( !TornFromFront )
+            {
+                CurrentPieceModel = PieceEnd;
+            } else
+            {
+                CurrentPieceModel = PieceEnd_TornFront;
+            }
         }
         else if (GeometryVariant == PieceGeometryVariant.STRAIGHT)
         {
-            CurrentPieceModel = PieceStraight;
-            CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+            if ( !TornFromBack && !TornFromFront )
+            {
+                CurrentPieceModel = PieceStraight;
+            }
+            else if ( TornFromBack )
+            {
+                CurrentPieceModel = PieceStraight_TornBack;
+                CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+            }
+            else if ( TornFromFront )
+            {
+                CurrentPieceModel = PieceStraight_TornBack;
+                CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(180.0f, Vector3.up);
+            }
+            else
+            {
+                CurrentPieceModel = PieceStraight_TornFront_TornBack;
+            }
         }
-        else if ( GeometryVariant == PieceGeometryVariant.TURNING_LEFT )
+        else 
         {
-            CurrentPieceModel = PieceTurn;
-            CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(-90.0f, Vector3.up);
-        }
-        else if ( GeometryVariant == PieceGeometryVariant.TURNING_RIGHT )
-        {
-            CurrentPieceModel = PieceTurn;
-            CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+            // Turning models.
+            
+            if (TornFromBack && !TornFromFront)
+            {
+                // These variations shouldn't actually be visible with the current code.
+                if ( GeometryVariant == PieceGeometryVariant.TURNING_RIGHT )
+                {
+                    CurrentPieceModel = PieceTurn_TornBack;
+                    CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+                }
+                else if ( GeometryVariant == PieceGeometryVariant.TURNING_LEFT )
+                {
+                    CurrentPieceModel = PieceTurn_TornFront;
+                    CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(-90.0f, Vector3.up);
+                }
+                return;
+            }
+            else if ( TornFromFront && !TornFromBack )
+            {
+                if ( GeometryVariant == PieceGeometryVariant.TURNING_RIGHT )
+                {
+                    CurrentPieceModel = PieceTurn_TornFront;
+                    CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+                }
+                else if ( GeometryVariant == PieceGeometryVariant.TURNING_LEFT )
+                {
+                    CurrentPieceModel = PieceTurn_TornBack;
+                    CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(-90.0f, Vector3.up);
+                }
+                return;
+            }
+
+            if ( !TornFromBack && !TornFromFront )
+            {
+                CurrentPieceModel = PieceTurn;
+            }
+            else if ( TornFromFront && TornFromBack )
+            {
+                CurrentPieceModel = PieceTurn_TornFront_TornBack;
+            }
+            if ( GeometryVariant == PieceGeometryVariant.TURNING_LEFT )
+            {
+                CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(-90.0f, Vector3.up);
+            }
+            else
+            {
+                CurrentPieceModel.transform.localRotation = Quaternion.AngleAxis(0.0f, Vector3.up);
+            }
         }
     }
 
     private void UpdateGeometryVariantBasedOnNextPiece()
     {
+        if (TornFromBack)
+        {
+            GeometryVariant = PieceGeometryVariant.STRAIGHT;
+            return;
+        }
         if (NextCapePiece == null)
         {
             GeometryVariant = PieceGeometryVariant.END;
@@ -158,9 +226,10 @@ public class CapeTile : LevelObject
     private void SnapNextCapePiece()
     {
         // TODO: Sound
+        // Note that TornFromBack needs to be set before resetting NextCapePiece in order to update the model correctly.
         TornFromBack = true;
-        _NextCapePiece.TornFromFront = true;
-        _NextCapePiece = null;
+        NextCapePiece.TornFromFront = true;
+        NextCapePiece = null;
     }
 
     public void RotateFrontTowards(CapeTile tile)
@@ -204,9 +273,7 @@ public class CapeTile : LevelObject
             else
             {
                 NextCapePiece.MoveCape(this, oldVerticalLayer, Vector3Int.RoundToInt(myOldPosition - NextCapePiece.transform.position));
-                if (!TornFromBack) {
-                    UpdateGeometryVariantBasedOnNextPiece();
-                }
+                UpdateGeometryVariantBasedOnNextPiece();
                 UpdateModel();
             }
         }
