@@ -39,6 +39,26 @@ public class PlayerController : MonoBehaviour
                 level.Reset();
             }
         }
+        ProcessPointerInput();
+    }
+
+    private void ProcessPointerInput()
+    {
+        Pointer p = Pointer.CreateOnPointerDown();
+        if ( p != null )
+        {
+            var ray = p.GetRay(GameManager.instance.Camera);
+            RaycastHit hitInfo;
+            Physics.Raycast(ray, out hitInfo, 100.0f, 1 << LayerMask.NameToLayer("UI"));
+            if ( hitInfo.collider != null )
+            {
+                ControllableCharacter ch = hitInfo.collider.GetComponentInParent<ControllableCharacter>();
+                if ( ch != null )
+                {
+                    GameManager.instance.Level.SwitchCharacter(ch);
+                }
+            }
+        }
     }
 
     private void OnDirectionInput(Vector2Int direction)

@@ -132,6 +132,19 @@ public class Level : MonoBehaviour
         ChosenCharacter = Characters[currentCharacterIndex];
     }
 
+    public void SwitchCharacter(ControllableCharacter ch)
+    {
+        ChosenCharacter = ch;
+        for ( int i = 0; i < Characters.Count; ++i )
+        {
+            if (Characters[i] == ch)
+            {
+                currentCharacterIndex = i;
+                return;
+            }
+        }
+    }
+
     public void ReachedGoal()
     {
         if ( !Win )
