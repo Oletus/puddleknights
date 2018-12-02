@@ -18,5 +18,10 @@ public class Lady : LevelObject, ControllableCharacter
         VerticalLayer = newVerticalLayer;
 
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
+
+        if (Level.TileHasComponent<Goal>(TileCoordinates))
+        {
+            Level.ReachedGoal();
+        }
     }
 }

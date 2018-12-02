@@ -54,12 +54,12 @@ public class CapeTile : LevelObject
 
     private bool IsWeightOnTop()
     {
-        return Level.IsWeightInTile(this.TileCoordinates);
+        return Level.TileHasComponent<Knight>(this.TileCoordinates);
     }
 
     public bool HasLadyOnTop()
     {
-        if ( Level.IsLadyInTile(this.TileCoordinates) )
+        if ( Level.TileHasComponent<Lady>(this.TileCoordinates) )
         {
             return true;
         }

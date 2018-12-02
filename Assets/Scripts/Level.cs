@@ -10,6 +10,8 @@ public class Level : MonoBehaviour
     private List<ControllableCharacter> Characters;
     private int currentCharacterIndex = 0;
 
+    public bool Win { get; private set; }
+
     [System.NonSerialized] public ControllableCharacter ChosenCharacter = null;
 
     public void Awake()
@@ -104,25 +106,13 @@ public class Level : MonoBehaviour
         return !hadPuddle || hadCape;
     }
 
-    public bool IsLadyInTile(Vector3Int coords)
+    public bool TileHasComponent<T>(Vector3Int coords)
+        where T : Component
     {
         List<LevelObject> objects = GetObjectsAt(coords);
         foreach ( LevelObject obj in objects )
         {
-            if (obj.GetComponent<Lady>())
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public bool IsWeightInTile(Vector3Int coords)
-    {
-        List<LevelObject> objects = GetObjectsAt(coords);
-        foreach ( LevelObject obj in objects )
-        {
-            if ( obj.GetComponent<Knight>() )
+            if ( obj.GetComponent<T>() )
             {
                 return true;
             }
@@ -134,5 +124,14 @@ public class Level : MonoBehaviour
     {
         currentCharacterIndex = (currentCharacterIndex + 1) % Characters.Count;
         ChosenCharacter = Characters[currentCharacterIndex];
+    }
+
+    public void ReachedGoal()
+    {
+        if ( !Win )
+        {
+            Win = true;
+            Debug.Log("Goal reached!");
+        }
     }
 }

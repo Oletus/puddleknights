@@ -26,24 +26,24 @@ public class PlayerController : MonoBehaviour
             {
                 Level.SwitchCharacter();
             }
-        }
-        if ( Character != null )
-        {
-            if ( Input.GetKeyDown(KeyCode.UpArrow) )
+            if ( Character != null && !Level.Win )
             {
-                Character.TryMove(new Vector3Int(0, 0, 1));
-            }
-            else if ( Input.GetKeyDown(KeyCode.DownArrow) )
-            {
-                Character.TryMove(new Vector3Int(0, 0, -1));
-            }
-            else if ( Input.GetKeyDown(KeyCode.LeftArrow) )
-            {
-                Character.TryMove(Vector3Int.left);
-            }
-            else if ( Input.GetKeyDown(KeyCode.RightArrow) )
-            {
-                Character.TryMove(Vector3Int.right);
+                if ( Input.GetKeyDown(KeyCode.UpArrow) )
+                {
+                    Character.TryMove(new Vector3Int(0, 0, 1));
+                }
+                else if ( Input.GetKeyDown(KeyCode.DownArrow) )
+                {
+                    Character.TryMove(new Vector3Int(0, 0, -1));
+                }
+                else if ( Input.GetKeyDown(KeyCode.LeftArrow) )
+                {
+                    Character.TryMove(Vector3Int.left);
+                }
+                else if ( Input.GetKeyDown(KeyCode.RightArrow) )
+                {
+                    Character.TryMove(Vector3Int.right);
+                }
             }
         }
     }
