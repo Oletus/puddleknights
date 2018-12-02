@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793177133477219100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.048712, z: 1}
   m_Children: []
   m_Father: {fileID: 7763175378332422585}
@@ -136,3 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94651fc2ea8c8814ca6da64dd08a4e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectedIndicatorMarker: {fileID: 0}
+  _RotationPivot: {fileID: 0}
+  _IsObstacle: 0
+  _IsAboveGround: 0

@@ -41,8 +41,7 @@ public class LevelObject : MonoBehaviour
         }
     }
 
-    [SerializeField] private GameObject _RotationPivot;
-    protected GameObject RotationPivot { get { return _RotationPivot; } }
+    protected GameObject RotationPivot { get { return gameObject; } }
 
     [SerializeField] private bool _IsObstacle = false;
     public bool IsObstacle { get { return _IsObstacle; } }

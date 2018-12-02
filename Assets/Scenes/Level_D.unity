@@ -281,7 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &45572611
@@ -453,7 +452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &51130360
@@ -550,7 +548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &54966077
@@ -872,7 +869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &72297883
@@ -969,7 +965,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &88569387 stripped
@@ -1072,7 +1067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &144653942
@@ -1169,7 +1163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &144723804
@@ -1266,7 +1259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &166662987 stripped
@@ -1444,7 +1436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &194460654
@@ -1541,7 +1532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &209030441
@@ -1638,7 +1628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &219856421
@@ -1804,7 +1793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &235983057
@@ -1901,7 +1889,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &237113169
@@ -1998,7 +1985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &238968287
@@ -2095,7 +2081,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &244199501
@@ -2192,7 +2177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &251373053
@@ -2289,7 +2273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &259663201
@@ -2386,7 +2369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &262950590
@@ -2702,7 +2684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &287107360 stripped
@@ -2805,7 +2786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &294433424
@@ -2902,7 +2882,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &298465817
@@ -3074,7 +3053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &300141558
@@ -3171,7 +3149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &311802138
@@ -3337,7 +3314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &349842194
@@ -3584,7 +3560,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &371103372
@@ -3756,7 +3731,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &382914299
@@ -3853,7 +3827,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &383227372
@@ -3950,7 +3923,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &392695104
@@ -4047,7 +4019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &394106890
@@ -4363,7 +4334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &420748481
@@ -4535,7 +4505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &433527720 stripped
@@ -4638,7 +4607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &449371341
@@ -4735,7 +4703,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &456058350
@@ -4832,7 +4799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &464669677
@@ -5004,7 +4970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &496108061
@@ -5101,7 +5066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &510583421
@@ -5198,7 +5162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &520883283
@@ -5295,7 +5258,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &523680518
@@ -5467,7 +5429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &535470641
@@ -5783,7 +5744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &583388871
@@ -5816,22 +5776,22 @@ PrefabInstance:
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
@@ -5846,37 +5806,12 @@ PrefabInstance:
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
@@ -6175,7 +6110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &661897239
@@ -6272,7 +6206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &681343405
@@ -6513,7 +6446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &694160619
@@ -6610,7 +6542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &701664363 stripped
@@ -6713,7 +6644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &730289733
@@ -6885,7 +6815,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &740863093
@@ -6982,7 +6911,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &751404804
@@ -7079,7 +7007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &769343691
@@ -7251,7 +7178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &785461506
@@ -7348,7 +7274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &797775327
@@ -7520,7 +7445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &805260868
@@ -7617,7 +7541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &822993859
@@ -7714,7 +7637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &843144494
@@ -7811,7 +7733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &884423027
@@ -7908,7 +7829,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &902140943
@@ -8230,7 +8150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &970439982
@@ -8327,7 +8246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &974046362
@@ -8424,7 +8342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &981151687
@@ -8521,7 +8438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &987662122
@@ -8618,7 +8534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &991249492 stripped
@@ -8733,7 +8648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1027149155
@@ -8830,7 +8744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1028672555
@@ -9002,7 +8915,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1061627610
@@ -9249,7 +9161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1137755069
@@ -9421,7 +9332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1148663922
@@ -9518,7 +9428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1149727225
@@ -9690,7 +9599,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1180289267
@@ -9787,7 +9695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1180516387
@@ -9884,7 +9791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1182957270
@@ -9981,7 +9887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1210285809
@@ -10360,7 +10265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1258203009
@@ -10457,7 +10361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1271502794
@@ -10698,7 +10601,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1314142071
@@ -10795,7 +10697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1316494245
@@ -10967,7 +10868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1320193763
@@ -11214,7 +11114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1357206436
@@ -11311,7 +11210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1358649048
@@ -11408,7 +11306,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1359359231
@@ -11580,7 +11477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1363124258
@@ -11752,7 +11648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1380873027
@@ -11849,7 +11744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1384998768
@@ -11988,21 +11882,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3629635629038834747, guid: 99b7ea9a93103f64e9d244416e6a1ada,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629635629038834747, guid: 99b7ea9a93103f64e9d244416e6a1ada,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629635629038834747, guid: 99b7ea9a93103f64e9d244416e6a1ada,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b7ea9a93103f64e9d244416e6a1ada, type: 3}
 --- !u!1001 &1396450643
@@ -12099,7 +11978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1399354191
@@ -12265,7 +12143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1402734896
@@ -12449,7 +12326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1442722942
@@ -12546,7 +12422,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1444218796
@@ -12724,7 +12599,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1469341112
@@ -12896,7 +12770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1500103517 stripped
@@ -12999,7 +12872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1549861459 stripped
@@ -13102,7 +12974,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1567421176
@@ -13199,7 +13070,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1586701140
@@ -13371,7 +13241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1625113519
@@ -13468,7 +13337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1627612463
@@ -13565,7 +13433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1640157225
@@ -13662,7 +13529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1642164582
@@ -13759,7 +13625,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1643256227
@@ -13856,7 +13721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1646994665
@@ -14097,7 +13961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1661625597
@@ -14194,7 +14057,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1669542296 stripped
@@ -14366,7 +14228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1678029548
@@ -14463,7 +14324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1681127410
@@ -14629,7 +14489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1727867672
@@ -14801,7 +14660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1730984161 stripped
@@ -14840,22 +14698,22 @@ PrefabInstance:
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
@@ -14870,37 +14728,12 @@ PrefabInstance:
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 997861360232754547, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
@@ -15049,7 +14882,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1750656760 stripped
@@ -15152,7 +14984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1783745527
@@ -15318,7 +15149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1810093961
@@ -15415,7 +15245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1829198435
@@ -15512,7 +15341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1844474163
@@ -15609,7 +15437,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1848828845
@@ -15781,7 +15608,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1854241212
@@ -15953,7 +15779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1869604594
@@ -16350,7 +16175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1 &1904144777
@@ -16709,7 +16533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1919840492
@@ -16806,7 +16629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1925450308
@@ -16903,7 +16725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1931929850
@@ -17075,7 +16896,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1967301094
@@ -17172,7 +16992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1968797563
@@ -17269,7 +17088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &1973185047 stripped
@@ -17372,7 +17190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &1995414052
@@ -17619,7 +17436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!4 &2035039673 stripped
@@ -17722,7 +17538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2072334064
@@ -17819,7 +17634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2077173216
@@ -17916,7 +17730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2098787906
@@ -18013,7 +17826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2101661376
@@ -18185,7 +17997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2134219403
@@ -18357,7 +18168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
 --- !u!1001 &2042588646436534608
