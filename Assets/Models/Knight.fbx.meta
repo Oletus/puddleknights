@@ -6,9 +6,11 @@ ModelImporter:
     100000: Cube.021
     100002: Generic
     100004: //RootNode
+    100006: Knight
     400000: Cube.021
     400002: Generic
     400004: //RootNode
+    400006: Knight
     2100000: Lether
     2100002: Black
     2100004: Pants
@@ -20,11 +22,14 @@ ModelImporter:
     2300000: Cube.021
     2300002: Generic
     2300004: //RootNode
+    2300006: Knight
     3300000: Cube.021
     3300002: Generic
     3300004: //RootNode
+    3300006: Knight
     4300000: Generic
     4300002: Cube.021
+    4300004: Knight
   externalObjects: {}
   materials:
     importMaterials: 1
