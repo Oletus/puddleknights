@@ -6,10 +6,24 @@ public class CapeTile : LevelObject
 {
     [System.NonSerialized] public CapeTile NextCapePiece;
 
+    bool HadWeightOnTop = false;
+
     private void SnapNextCapePiece()
     {
         // TODO: Sound / VFX?
         NextCapePiece = null;
+    }
+
+    public void MarkWeightsForMove()
+    {
+        if ( IsWeightOnTop() )
+        {
+            HadWeightOnTop = true;
+        }
+        else if ( NextCapePiece != null )
+        {
+            NextCapePiece.MarkWeightsForMove();
+        }
     }
 
     protected void MoveCape(int newVerticalLayer, Vector3Int direction)
@@ -22,7 +36,7 @@ public class CapeTile : LevelObject
 
         if ( NextCapePiece != null )
         {
-            if ( NextCapePiece.IsWeightOnTop() )
+            if ( NextCapePiece.HadWeightOnTop )
             {
                 SnapNextCapePiece();
                 Level.DropAllVerticalLayers();
