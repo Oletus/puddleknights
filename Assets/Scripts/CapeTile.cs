@@ -234,7 +234,9 @@ public class CapeTile : LevelObject
 
     public void RotateFrontTowards(CapeTile tile)
     {
-        transform.rotation = Quaternion.LookRotation((tile.transform.position - transform.position).normalized);
+        Vector3 offset = (tile.transform.position - transform.position);
+        offset.y = 0.0f;
+        transform.rotation = Quaternion.LookRotation(offset.normalized);
     }
 
     public void MarkWeightsForMove()
