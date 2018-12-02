@@ -19,8 +19,10 @@ ModelImporter:
     2100014: Hair
     2300000: Cube.021
     2300002: Generic
+    2300004: //RootNode
     3300000: Cube.021
     3300002: Generic
+    3300004: //RootNode
     4300000: Generic
     4300002: Cube.021
   externalObjects: {}
