@@ -941,11 +941,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
         type: 3}
       propertyPath: CapePieceOffsets.Array.size
@@ -980,6 +975,16 @@ PrefabInstance:
         type: 3}
       propertyPath: CapePieceOffsets.Array.data[2].y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapeMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d65949659c6a9034780c1a922da26fb7, type: 2}
+    - target: {fileID: 8783182200890581655, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c971f98b6cf903e4a89e352ea15e2605, type: 3}
@@ -3589,6 +3594,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: CapeMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: dfe6ce7f4dce14e40968ae581d8a3015, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c971f98b6cf903e4a89e352ea15e2605, type: 3}
 --- !u!1001 &2042588646436534608
