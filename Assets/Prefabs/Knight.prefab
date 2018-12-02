@@ -354,9 +354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 9012281923224766570}
-  _RotationPivot: {fileID: 5934875992049122908}
   _IsObstacle: 1
   _IsAboveGround: 1
+  PiecePrefabs: {fileID: 0}
+  UsesCapeModel: 0
   CapePieceOffsets: []
   CapePrefab: {fileID: 3970258963493783363, guid: 3910c312206d7b345b30f378533b273f,
     type: 3}

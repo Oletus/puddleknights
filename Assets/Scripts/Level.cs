@@ -7,7 +7,6 @@ using LPUnityUtils;
 public class Level : MonoBehaviour
 {
     private List<LevelObject> LevelObjects;
-    private PlayerController PlayerController;
     private List<ControllableCharacter> Characters;
     private int currentCharacterIndex;
 
@@ -20,7 +19,6 @@ public class Level : MonoBehaviour
     public void Awake()
     {
         LevelObjects = new List<LevelObject>(GetComponentsInChildren<LevelObject>(true));
-        PlayerController = FindObjectOfType<PlayerController>();
         Characters = new List<ControllableCharacter>(GetComponentsInChildren<ControllableCharacter>(true));
         currentCharacterIndex = 0;
         ChosenCharacter = Characters[currentCharacterIndex];

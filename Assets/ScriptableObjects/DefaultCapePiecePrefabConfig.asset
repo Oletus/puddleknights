@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70177f87f7ed6d4b9e57a0a1cb3668a, type: 3}
+  m_Name: DefaultCapePiecePrefabConfig
+  m_EditorClassIdentifier: 
+  PieceTurn: {fileID: 8516904066476316793, guid: 1f852e50004d4e64e8376099763c12b2,
+    type: 3}
+  PieceStraight: {fileID: 3350300873212320289, guid: 55d3159b5c6cab945a486cc174964aec,
+    type: 3}
+  PieceEnd: {fileID: 6849390104866355419, guid: b0449ea94b4aa2f41af11b9720449c07,
+    type: 3}
+  PieceTurn_TornFront: {fileID: 855063162519249281, guid: 60fe149c02449f645abfc9f2dc787cf9,
+    type: 3}
+  PieceStraight_TornBack: {fileID: 6332918288955611333, guid: 88f9e1f1659f2ff4a96f3ac29ea20929,
+    type: 3}
+  PieceEnd_TornFront: {fileID: 5062270763304026393, guid: b89fe02144cd5e84aa5a421eb76ba95a,
+    type: 3}
+  PieceTurn_TornBack: {fileID: 5881746834288830830, guid: f8df2a3aae6d8e4449408e247ef5ef3b,
+    type: 3}
+  PieceTurn_TornFront_TornBack: {fileID: 66238384757666574, guid: 0566c876873dd644d82c88ae1f910949,
+    type: 3}
+  PieceStraight_TornFront_TornBack: {fileID: 6029949969721786825, guid: d2dd2738e72f3a341944bb40123c37d4,
+    type: 3}

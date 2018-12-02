@@ -45,6 +45,7 @@ public class Knight : CapeTile, ControllableCharacter
         foreach (Vector2Int offset in CapePieceOffsets)
         {
             capeOwner.NextCapePiece = Instantiate(CapePrefab, capeOwner.transform.position + CapeOffsetToWorldSpace(offset), Quaternion.identity, Level.transform).GetComponent<CapeTile>();
+            capeOwner.NextCapePiece.RotateFrontTowards(capeOwner);
             capeOwner = capeOwner.NextCapePiece;
         }
     }
@@ -69,7 +70,7 @@ public class Knight : CapeTile, ControllableCharacter
             this.NextCapePiece.MarkWeightsForMove();
         }
 
-        MoveCape(Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
+        MoveCape(null, Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
         return true;
     }

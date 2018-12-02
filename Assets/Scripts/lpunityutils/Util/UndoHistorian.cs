@@ -16,7 +16,7 @@ namespace LPUnityUtils
 		[SerializeField] public bool includeParent = true;
 	}
 
-	[AttributeUsage(AttributeTargets.Field)]
+	[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
 	class UndoHistoryable : Attribute {}
 
 	interface UndoAnimatable
@@ -45,7 +45,7 @@ namespace LPUnityUtils
 
 		public class HistoryState
 		{
-			// Map from component instance ids to field values. The string key is FieldInfo.Name
+			// Map from component instance ids to field and property values. The string key is FieldInfo.Name / PropertyInfo.name
 			public Dictionary<int, Dictionary<string, object>> storedFields = new Dictionary<int, Dictionary<string, object>>();
 			// Map from gameObject instance ids to transform data.
 			public Dictionary<int, HistoryTransformData> transformData = new Dictionary<int, HistoryTransformData>();
@@ -293,6 +293,20 @@ namespace LPUnityUtils
 						}
 					}
 				}
+                foreach (PropertyInfo p in comp.GetType().GetProperties())
+                {
+                    foreach (Attribute a in p.GetCustomAttributes(false))
+                    {
+                        if (a is UndoHistoryable)
+                        {
+                            if ( !state.storedFields.ContainsKey(comp.GetInstanceID()) )
+                            {
+                                state.storedFields[comp.GetInstanceID()] = new Dictionary<string, object>();
+                            }
+                            state.storedFields[comp.GetInstanceID()][p.Name] = p.GetValue(comp);
+                        }
+                    }
+                }
 			}
 
             if ( thisHistorian != null )
@@ -336,7 +350,17 @@ namespace LPUnityUtils
 						}
 					}
 				}
-			}
+                foreach ( PropertyInfo p in comp.GetType().GetProperties() )
+                {
+                    foreach ( Attribute a in p.GetCustomAttributes(false) )
+                    {
+                        if ( a is UndoHistoryable )
+                        {
+                            p.SetValue(comp, state.storedFields[comp.GetInstanceID()][p.Name]);
+                        }
+                    }
+                }
+            }
             if ( thisHistorian != null )
             {
                 if ( thisHistorian.config.includeParent )
