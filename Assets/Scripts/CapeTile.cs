@@ -17,6 +17,19 @@ public class CapeTile : LevelObject
 
     [SerializeField] private bool UsesCapeModel = true;
 
+    public Material CapeMaterial { set
+        {
+            if ( value != null )
+            {
+                var renderers = GetComponentsInChildren<MeshRenderer>(true);
+                foreach ( var renderer in renderers )
+                {
+                    MaterialUtils.SubstituteMaterial(renderer, "KnightCape", value);
+                }
+            }
+        }
+    }
+
     private enum PieceGeometryVariant {
         END,
         STRAIGHT,

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using LPUnityUtils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,9 +13,21 @@ public class Knight : CapeTile, ControllableCharacter
 
     [SerializeField] private bool CanGoBackwardsWhenCaped = false;
 
+    [SerializeField] private Material CapeMaterial;
+
     protected override void Awake()
     {
         base.Awake();
+
+        if (CapeMaterial != null)
+        {
+            var renderers = GetComponentsInChildren<MeshRenderer>();
+            foreach ( var renderer in renderers )
+            {
+                MaterialUtils.SubstituteMaterial(renderer, "KnightCape", CapeMaterial);
+            }
+        }
+
         SpawnCapePieces();
     }
 
@@ -45,6 +58,7 @@ public class Knight : CapeTile, ControllableCharacter
         foreach (Vector2Int offset in CapePieceOffsets)
         {
             capeOwner.NextCapePiece = Instantiate(CapePrefab, capeOwner.transform.position + CapeOffsetToWorldSpace(offset), Quaternion.identity, Level.transform).GetComponent<CapeTile>();
+            capeOwner.NextCapePiece.CapeMaterial = CapeMaterial;
             capeOwner.NextCapePiece.RotateFrontTowards(capeOwner);
             capeOwner = capeOwner.NextCapePiece;
         }
