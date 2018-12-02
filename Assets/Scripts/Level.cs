@@ -9,7 +9,7 @@ public class Level : MonoBehaviour
     private List<LevelObject> LevelObjects;
     private PlayerController PlayerController;
     private List<ControllableCharacter> Characters;
-    private int currentCharacterIndex = 0;
+    private int currentCharacterIndex;
 
     UndoHistorian History;
 
@@ -127,9 +127,10 @@ public class Level : MonoBehaviour
         return false;
     }
 
-    public void SwitchCharacter()
+    public void SwitchCharacter(int direction)
     {
-        currentCharacterIndex = (currentCharacterIndex + 1) % Characters.Count;
+        currentCharacterIndex += direction;
+        WrapIndex.Wrap(ref currentCharacterIndex, Characters);
         ChosenCharacter = Characters[currentCharacterIndex];
     }
 

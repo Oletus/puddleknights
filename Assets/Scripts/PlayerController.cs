@@ -26,9 +26,13 @@ public class PlayerController : MonoBehaviour
             {
                 level.Undo();
             }
-            if ( Input.GetKeyDown(KeyCode.Space) )
+            if ( Input.GetButtonDown("NextCharacter") )
             {
-                level.SwitchCharacter();
+                level.SwitchCharacter(1);
+            }
+            if ( Input.GetButtonDown("PreviousCharacter") )
+            {
+                level.SwitchCharacter(-1);
             }
         }
     }
