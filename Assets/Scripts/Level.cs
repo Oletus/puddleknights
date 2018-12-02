@@ -146,12 +146,10 @@ public class Level : MonoBehaviour
     public void CommitToUndoHistory()
     {
         History.Commit("", LevelObjects);
-        Debug.Log("Commit");
     }
 
     public void Undo()
     {
         History.Undo(LevelObjects);
-        Debug.Log("Undo");
     }
 }
