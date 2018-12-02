@@ -408,7 +408,7 @@ MonoBehaviour:
   CapePrefab: {fileID: 3970258963493783363, guid: 3910c312206d7b345b30f378533b273f,
     type: 3}
   CanGoBackwardsWhenCaped: 0
-  CapeMaterial: {fileID: 0}
+  CapeMaterial: {fileID: 2100000, guid: d65949659c6a9034780c1a922da26fb7, type: 2}
 --- !u!114 &5855064789727713704
 MonoBehaviour:
   m_ObjectHideFlags: 0
