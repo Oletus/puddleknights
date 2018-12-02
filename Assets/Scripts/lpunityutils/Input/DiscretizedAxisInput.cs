@@ -8,6 +8,7 @@ namespace LPUnityUtils
 
     // Converts axis input to discrete up/down/left/right events.
     // The axis has to return to close to zero before another input event is registered.
+    // If you use this with key inputs, it's recommended to set the Gravity and Sensitivity values very high.
     class DiscretizedAxisInput : MonoBehaviour
     {
         [SerializeField] private string VerticalAxisName = "Vertical";
