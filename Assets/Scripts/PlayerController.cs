@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LPUnityUtils;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public void Awake()
     {
         SelectedIndicator = Instantiate(SelectedIndicatorPrefab, transform);
+        GetComponent<DiscretizedAxisInput>().OnDirectionInput += OnDirectionInput;
     }
 
     public void Update()
@@ -20,35 +22,34 @@ public class PlayerController : MonoBehaviour
         Level level = GameManager.instance.Level;
         if ( level != null )
         {
-            Character = level.ChosenCharacter;
             if ( Input.GetButtonDown("Undo") )
             {
                 level.Undo();
             }
-            if ( Input.GetKeyDown(KeyCode.Space) )
+            if ( Input.GetButtonDown("NextCharacter") )
             {
-                level.SwitchCharacter();
+                level.SwitchCharacter(1);
             }
+            if ( Input.GetButtonDown("PreviousCharacter") )
+            {
+                level.SwitchCharacter(-1);
+            }
+        }
+    }
+
+    private void OnDirectionInput(Vector2Int direction)
+    {
+        Level level = GameManager.instance.Level;
+
+        if ( level != null )
+        {
+            Character = level.ChosenCharacter;
             if ( Character != null && !level.Win )
             {
-                bool moved = false;
-                if ( Input.GetKeyDown(KeyCode.UpArrow) )
-                {
-                    moved = Character.TryMove(new Vector3Int(0, 0, 1));
-                }
-                else if ( Input.GetKeyDown(KeyCode.DownArrow) )
-                {
-                    moved = Character.TryMove(new Vector3Int(0, 0, -1));
-                }
-                else if ( Input.GetKeyDown(KeyCode.LeftArrow) )
-                {
-                    moved = Character.TryMove(Vector3Int.left);
-                }
-                else if ( Input.GetKeyDown(KeyCode.RightArrow) )
-                {
-                    moved = Character.TryMove(Vector3Int.right);
-                }
-                if (moved)
+                Vector3Int worldDirection = GroundPlane.CameraRelativeDirectionToWorldCardinalDirection(
+                    new Vector3(direction.x, 0.0f, direction.y),
+                    GameManager.instance.Camera);
+                if ( Character.TryMove(worldDirection) )
                 {
                     level.CommitToUndoHistory();
                 }
