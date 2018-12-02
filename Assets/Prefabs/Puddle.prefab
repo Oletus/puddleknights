@@ -192,6 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2986762257164966073}
   - component: {fileID: 462735587}
+  - component: {fileID: 1455971730264714142}
   m_Layer: 0
   m_Name: Puddle
   m_TagString: Untagged
@@ -228,6 +229,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedIndicatorMarker: {fileID: 0}
-  _RotationPivot: {fileID: 0}
   _IsObstacle: 0
   _IsAboveGround: 0
+--- !u!114 &1455971730264714142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8027287652704955071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702d3fff15e327b4ba9e5ebec422e79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Config: {fileID: 11400000, guid: 9f6660be5dce2ab42bc90a413eee886e, type: 2}

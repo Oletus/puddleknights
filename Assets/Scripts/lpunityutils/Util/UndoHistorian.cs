@@ -280,7 +280,7 @@ namespace LPUnityUtils
                     thisHistorian = comp as UndoHistorian;
                     continue;
 				}
-				foreach (FieldInfo f in comp.GetType().GetFields())
+				foreach (FieldInfo f in comp.GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public) )
 				{
 					foreach (Attribute a in f.GetCustomAttributes(false))
 					{
@@ -293,7 +293,7 @@ namespace LPUnityUtils
 						}
 					}
 				}
-                foreach (PropertyInfo p in comp.GetType().GetProperties())
+                foreach (PropertyInfo p in comp.GetType().GetProperties(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public) )
                 {
                     foreach (Attribute a in p.GetCustomAttributes(false))
                     {
@@ -340,7 +340,7 @@ namespace LPUnityUtils
                     thisHistorian = comp as UndoHistorian;
                     continue;
                 }
-                foreach (FieldInfo f in comp.GetType().GetFields())
+                foreach (FieldInfo f in comp.GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public) )
 				{
 					foreach (Attribute a in f.GetCustomAttributes(false))
 					{
@@ -350,7 +350,7 @@ namespace LPUnityUtils
 						}
 					}
 				}
-                foreach ( PropertyInfo p in comp.GetType().GetProperties() )
+                foreach ( PropertyInfo p in comp.GetType().GetProperties(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public) )
                 {
                     foreach ( Attribute a in p.GetCustomAttributes(false) )
                     {

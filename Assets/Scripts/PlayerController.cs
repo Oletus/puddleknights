@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour
             {
                 level.SwitchCharacter(-1);
             }
+            if ( Input.GetButtonDown("ResetLevel") )
+            {
+                level.Reset();
+            }
         }
     }
 
