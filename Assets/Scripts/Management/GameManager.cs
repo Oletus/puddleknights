@@ -12,6 +12,8 @@ public class GameManager : Singleton<GameManager>
 
     [System.NonSerialized] public Level Level;
 
+    [System.NonSerialized] public Camera Camera;
+
     void Awake()
     {
         if (!EnforceSingleton(false))
@@ -28,9 +30,15 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    void Update()
+    {
+        Camera = Camera.main;
+    }
+
     void LoadLevelFromScene(string sceneName)
     {
         SceneManager.LoadScene("Scenes/" + sceneName);
+        Camera = Camera.main;
     }
 
     void NextLevel()
