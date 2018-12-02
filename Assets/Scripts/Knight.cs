@@ -49,19 +49,19 @@ public class Knight : CapeTile, ControllableCharacter
         }
     }
 
-    public void TryMove(Vector3Int direction)
+    public bool TryMove(Vector3Int direction)
     {
         if ( !CanGoBackwardsWhenCaped && this.NextCapePiece != null && Vector3.Angle(this.RotationPivot.transform.forward, direction) > 170.0f)
         {
-            return;
+            return false;
         }
         if (!Level.IsTileFree(this.TileCoordinates + direction))
         {
-            return;
+            return false;
         }
         if (this.NextCapePiece != null && this.NextCapePiece.HasLadyOnTop())
         {
-            return;
+            return false;
         }
 
         if (this.NextCapePiece != null)
@@ -71,5 +71,6 @@ public class Knight : CapeTile, ControllableCharacter
 
         MoveCape(Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
+        return true;
     }
 }

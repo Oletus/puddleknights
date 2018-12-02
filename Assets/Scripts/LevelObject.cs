@@ -16,7 +16,7 @@ public class LevelObject : MonoBehaviour
     }
 
     // Integer coordinates for the corner of this object that has the smallest x and z coordinates.
-    public Vector3Int TileCoordinates {
+    public virtual Vector3Int TileCoordinates {
         get
         {
             return Vector3Int.RoundToInt(transform.position);

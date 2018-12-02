@@ -17,30 +17,40 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        if ( GameManager.instance.Level != null )
+        Level level = GameManager.instance.Level;
+        if ( level != null )
         {
-            Character = GameManager.instance.Level.ChosenCharacter;
+            Character = level.ChosenCharacter;
+            if ( Input.GetButtonDown("Undo") )
+            {
+                level.Undo();
+            }
             if ( Input.GetKeyDown(KeyCode.Space) )
             {
-                GameManager.instance.Level.SwitchCharacter();
+                level.SwitchCharacter();
             }
-            if ( Character != null && !GameManager.instance.Level.Win )
+            if ( Character != null && !level.Win )
             {
+                bool moved = false;
                 if ( Input.GetKeyDown(KeyCode.UpArrow) )
                 {
-                    Character.TryMove(new Vector3Int(0, 0, 1));
+                    moved = Character.TryMove(new Vector3Int(0, 0, 1));
                 }
                 else if ( Input.GetKeyDown(KeyCode.DownArrow) )
                 {
-                    Character.TryMove(new Vector3Int(0, 0, -1));
+                    moved = Character.TryMove(new Vector3Int(0, 0, -1));
                 }
                 else if ( Input.GetKeyDown(KeyCode.LeftArrow) )
                 {
-                    Character.TryMove(Vector3Int.left);
+                    moved = Character.TryMove(Vector3Int.left);
                 }
                 else if ( Input.GetKeyDown(KeyCode.RightArrow) )
                 {
-                    Character.TryMove(Vector3Int.right);
+                    moved = Character.TryMove(Vector3Int.right);
+                }
+                if (moved)
+                {
+                    level.CommitToUndoHistory();
                 }
             }
         }

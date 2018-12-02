@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LPUnityUtils;
 
 public class CapeTile : LevelObject
 {
-    [System.NonSerialized] public CapeTile NextCapePiece;
+    [System.NonSerialized] [UndoHistoryable] public CapeTile NextCapePiece;
 
     bool HadWeightOnTop = false;
 
@@ -38,6 +39,7 @@ public class CapeTile : LevelObject
         {
             if ( NextCapePiece.HadWeightOnTop )
             {
+                NextCapePiece.HadWeightOnTop = false;
                 SnapNextCapePiece();
                 Level.DropAllVerticalLayers();
             }

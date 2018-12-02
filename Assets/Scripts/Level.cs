@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using LPUnityUtils;
 
 public class Level : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Level : MonoBehaviour
     private PlayerController PlayerController;
     private List<ControllableCharacter> Characters;
     private int currentCharacterIndex = 0;
+
+    UndoHistorian History;
 
     public bool Win { get; private set; }
 
@@ -22,6 +25,9 @@ public class Level : MonoBehaviour
         currentCharacterIndex = 0;
         ChosenCharacter = Characters[currentCharacterIndex];
         GameManager.instance.Level = this;
+
+        History = GetComponent<UndoHistorian>();
+        CommitToUndoHistory();
     }
 
     private List<LevelObject> GetObjectsAt(Vector3Int coords)
@@ -135,5 +141,17 @@ public class Level : MonoBehaviour
             Debug.Log("Goal reached!");
             GameManager.instance.OnLevelWin();
         }
+    }
+
+    public void CommitToUndoHistory()
+    {
+        History.Commit("", LevelObjects);
+        Debug.Log("Commit");
+    }
+
+    public void Undo()
+    {
+        History.Undo(LevelObjects);
+        Debug.Log("Undo");
     }
 }

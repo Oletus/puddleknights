@@ -4,7 +4,8 @@ using UnityEngine;
 
 public interface ControllableCharacter
 {
-    void TryMove(Vector3Int direction);
+    // Returns true if actually moved.
+    bool TryMove(Vector3Int direction);
 
     Vector3 SelectedIndicatorPosition { get; }
 }

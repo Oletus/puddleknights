@@ -6,11 +6,11 @@ public class Lady : LevelObject, ControllableCharacter
 {
     public Vector3 SelectedIndicatorPosition { get { return SelectedIndicatorMarker.transform.position; } }
 
-    public void TryMove(Vector3Int direction)
+    public bool TryMove(Vector3Int direction)
     {
         if ( !Level.IsTileSuitableForLady(this.TileCoordinates + direction) )
         {
-            return;
+            return false;
         }
 
         int newVerticalLayer = Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1;
@@ -23,5 +23,6 @@ public class Lady : LevelObject, ControllableCharacter
         {
             Level.ReachedGoal();
         }
+        return true;
     }
 }
