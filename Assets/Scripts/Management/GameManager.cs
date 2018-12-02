@@ -19,19 +19,12 @@ public class GameManager : Singleton<GameManager>
             return;
         }
 
-        bool currentSceneIsLevel = false;
         for (int i = 0; i < levelScenes.Count; ++i )
         {
             if ( levelScenes[i] == SceneManager.GetActiveScene().name )
             {
                 currentLevelIndex = i;
-                currentSceneIsLevel = true;
             }
-        }
-
-        if ( !currentSceneIsLevel )
-        {
-            LoadLevelFromScene(levelScenes[currentLevelIndex]);
         }
     }
 
