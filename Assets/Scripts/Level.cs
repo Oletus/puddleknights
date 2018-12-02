@@ -21,6 +21,7 @@ public class Level : MonoBehaviour
         Characters = new List<ControllableCharacter>(GetComponentsInChildren<ControllableCharacter>(true));
         currentCharacterIndex = 0;
         ChosenCharacter = Characters[currentCharacterIndex];
+        GameManager.instance.Level = this;
     }
 
     private List<LevelObject> GetObjectsAt(Vector3Int coords)

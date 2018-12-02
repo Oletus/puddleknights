@@ -6,27 +6,25 @@ public class PlayerController : MonoBehaviour
 {
     public ControllableCharacter Character;
 
-    public Level Level;
-
     [SerializeField] private GameObject SelectedIndicatorPrefab;
 
     private GameObject SelectedIndicator;
 
     public void Awake()
     {
-        SelectedIndicator = Instantiate(SelectedIndicatorPrefab);
+        SelectedIndicator = Instantiate(SelectedIndicatorPrefab, transform);
     }
 
     public void Update()
     {
-        if ( Level != null )
+        if ( GameManager.instance.Level != null )
         {
-            Character = Level.ChosenCharacter;
+            Character = GameManager.instance.Level.ChosenCharacter;
             if ( Input.GetKeyDown(KeyCode.Space) )
             {
-                Level.SwitchCharacter();
+                GameManager.instance.Level.SwitchCharacter();
             }
-            if ( Character != null && !Level.Win )
+            if ( Character != null && !GameManager.instance.Level.Win )
             {
                 if ( Input.GetKeyDown(KeyCode.UpArrow) )
                 {
@@ -50,6 +48,11 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        SelectedIndicator.transform.position = Level.ChosenCharacter.SelectedIndicatorPosition;
+        bool indicator = GameManager.instance.Level != null && GameManager.instance.Level.ChosenCharacter != null;
+        SelectedIndicator.SetActive(indicator);
+        if ( indicator )
+        {
+            SelectedIndicator.transform.position = GameManager.instance.Level.ChosenCharacter.SelectedIndicatorPosition;
+        }
     }
 }
