@@ -133,6 +133,7 @@ public class Level : MonoBehaviour
         {
             Win = true;
             Debug.Log("Goal reached!");
+            GameManager.instance.OnLevelWin();
         }
     }
 }

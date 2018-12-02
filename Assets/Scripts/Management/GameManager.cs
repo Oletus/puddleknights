@@ -42,4 +42,15 @@ public class GameManager : Singleton<GameManager>
         }
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
+
+    private IEnumerator NextLevelAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        NextLevel();
+    }
+
+    public void OnLevelWin()
+    {
+        StartCoroutine(NextLevelAfter(1.0f));
+    }
 }
