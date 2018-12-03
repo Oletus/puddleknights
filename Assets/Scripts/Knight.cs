@@ -15,6 +15,8 @@ public class Knight : CapeTile, ControllableCharacter
 
     [SerializeField] private Material CapeMaterial;
 
+    [SerializeField] private AudioSource KnightNoSound;
+
     protected override void Awake()
     {
         base.Awake();
@@ -29,6 +31,14 @@ public class Knight : CapeTile, ControllableCharacter
         }
 
         SpawnCapePieces();
+    }
+
+    private void PlayKnightNo()
+    {
+        if (KnightNoSound != null)
+        {
+            KnightNoSound.Play();
+        }
     }
 
     private Vector3 CapeOffsetToWorldSpace(Vector2Int offset)
@@ -68,14 +78,17 @@ public class Knight : CapeTile, ControllableCharacter
     {
         if ( !CanGoBackwardsWhenCaped && this.NextCapePiece != null && Vector3.Angle(this.RotationPivot.transform.forward, direction) > 170.0f)
         {
+            PlayKnightNo();
             return false;
         }
         if (!Level.IsTileFree(this.TileCoordinates + direction))
         {
+            PlayKnightNo();
             return false;
         }
         if (this.NextCapePiece != null && this.NextCapePiece.HasLadyOnTop())
         {
+            PlayKnightNo();
             return false;
         }
 

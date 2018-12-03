@@ -17,6 +17,8 @@ public class CapeTile : LevelObject
 
     [SerializeField] private bool UsesCapeModel = true;
 
+    [SerializeField] private AudioSource TearSound;
+
     public Material CapeMaterial { set
         {
             if ( value != null )
@@ -238,7 +240,10 @@ public class CapeTile : LevelObject
 
     private void SnapNextCapePiece()
     {
-        // TODO: Sound
+        if ( TearSound != null )
+        {
+            TearSound.Play();
+        }
         // Note that TornFromBack needs to be set before resetting NextCapePiece in order to update the model correctly.
         TornFromBack = true;
         NextCapePiece.TornFromFront = true;

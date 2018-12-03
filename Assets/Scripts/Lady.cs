@@ -6,10 +6,17 @@ public class Lady : LevelObject, ControllableCharacter
 {
     public Vector3 SelectedIndicatorPosition { get { return SelectedIndicatorMarker.transform.position; } }
 
+    [SerializeField] private AudioSource LadyNoSound;
+
     public bool TryMove(Vector3Int direction)
     {
         if ( !Level.IsTileSuitableForLady(this.TileCoordinates + direction) )
         {
+            this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
+            if ( LadyNoSound != null )
+            {
+                LadyNoSound.Play();
+            }
             return false;
         }
 
