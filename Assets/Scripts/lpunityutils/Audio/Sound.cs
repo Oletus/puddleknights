@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿// Copyright Olli Etuaho 2018
+
 using UnityEngine;
 
 namespace LPUnityUtils
@@ -35,4 +35,4 @@ namespace LPUnityUtils
         }
     }
 
-}
+}  // namespace LPUnityUtils
