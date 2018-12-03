@@ -14,6 +14,8 @@ public class GameManager : Singleton<GameManager>
 
     [System.NonSerialized] public Camera Camera;
 
+    [SerializeField] private GameObject TitleUI;
+
     void Awake()
     {
         if (!EnforceSingleton(false))
@@ -28,6 +30,8 @@ public class GameManager : Singleton<GameManager>
                 currentLevelIndex = i;
             }
         }
+
+        TitleUI.SetActive(true);
     }
 
     private void Start()

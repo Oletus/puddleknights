@@ -220,6 +220,7 @@ MonoBehaviour:
   - Level_B
   - Level_two_small_puddles
   - Level_tricky_river
+  TitleUI: {fileID: 2813345242404750909}
 --- !u!114 &8495872357167796107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,6 +608,12 @@ PrefabInstance:
 --- !u!4 &8788738682749571503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7619769920010761519, guid: 8588122900cce6f47890eb7700db6b53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1173472590551278720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2813345242404750909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3981746725875704509, guid: 8588122900cce6f47890eb7700db6b53,
     type: 3}
   m_PrefabInstance: {fileID: 1173472590551278720}
   m_PrefabAsset: {fileID: 0}
