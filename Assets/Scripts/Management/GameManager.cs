@@ -9,12 +9,16 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private List<string> levelScenes;
 
     private int currentLevelIndex = 0;
+    private int MaxLevelReached = 0;
 
     [System.NonSerialized] public Level Level;
 
     [System.NonSerialized] public Camera Camera;
 
     [SerializeField] private GameObject TitleUI;
+
+    private GameObject NextLevelButton;
+    private GameObject PrevLevelButton;
 
     void Awake()
     {
@@ -32,11 +36,26 @@ public class GameManager : Singleton<GameManager>
         }
 
         TitleUI.SetActive(true);
+
+        LoadPlayerData();
+        MaxLevelReached = Mathf.Max(MaxLevelReached, currentLevelIndex);
+    }
+
+    private void UpdatePrevAndNextLevelButtons()
+    {
+        if ( NextLevelButton == null )
+        {
+            NextLevelButton = GameObject.Find("NextButton");
+            PrevLevelButton = GameObject.Find("PreviusButton");
+        }
+        NextLevelButton.SetActive(this.MaxLevelReached > currentLevelIndex);
+        PrevLevelButton.SetActive(currentLevelIndex > 0);
     }
 
     private void Start()
     {
         AudioManager.instance.Play("thememusic");
+        UpdatePrevAndNextLevelButtons();
     }
 
     void Update()
@@ -47,39 +66,47 @@ public class GameManager : Singleton<GameManager>
     void LoadLevelFromScene(string sceneName)
     {
         SceneManager.LoadScene("Scenes/" + sceneName);
-        Camera = Camera.main;
+        MaxLevelReached = Mathf.Max(MaxLevelReached, currentLevelIndex);
+        SavePlayerData();
+        UpdatePrevAndNextLevelButtons();
     }
 
-    public void PreviousLevel(bool allowLastLevel)
+    public void PreviousLevel()
     {
-        --currentLevelIndex;
-        WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
-        if ( !allowLastLevel && currentLevelIndex == levelScenes.Count - 1 )
+        if ( currentLevelIndex == 0 )
         {
-            currentLevelIndex = levelScenes.Count - 2;
+            return;
         }
+        --currentLevelIndex;
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
 
-    public void NextLevel(bool allowLastLevel)
+    public void NextLevel()
     {
         ++currentLevelIndex;
         WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
-        if (!allowLastLevel && currentLevelIndex == levelScenes.Count - 1)
-        {
-            currentLevelIndex = 0;
-        }
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
 
     private IEnumerator NextLevelAfter(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        NextLevel(true);
+        NextLevel();
     }
 
     public void OnLevelWin()
     {
         StartCoroutine(NextLevelAfter(1.0f));
+    }
+
+    public void SavePlayerData()
+    {
+        PlayerPrefs.SetInt("maxLevelReached", MaxLevelReached);
+        PlayerPrefs.Save();
+    }
+
+    public void LoadPlayerData()
+    {
+        MaxLevelReached = PlayerPrefs.GetInt("maxLevelReached", 0);
     }
 }

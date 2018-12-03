@@ -94,12 +94,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnPreviousLevel()
     {
-        GameManager.instance.PreviousLevel(false);
+        GameManager.instance.PreviousLevel();
     }
 
     public void OnNextLevel()
     {
-        GameManager.instance.NextLevel(false);
+        GameManager.instance.NextLevel();
     }
 
     private void OnDirectionInput(Vector2Int direction)
