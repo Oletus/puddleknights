@@ -4946,12 +4946,12 @@ Transform:
   - {fileID: 793313657}
   - {fileID: 1534523814}
   - {fileID: 370192575}
+  - {fileID: 597861332}
   - {fileID: 872598384}
   - {fileID: 1624236613}
-  - {fileID: 597861332}
+  - {fileID: 839989065}
   - {fileID: 721878563}
   - {fileID: 2065161196}
-  - {fileID: 839989065}
   - {fileID: 1823659982}
   - {fileID: 430172199}
   m_Father: {fileID: 0}
@@ -5782,6 +5782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CapePieceOffsets.Array.data[1].y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358802529463711417, guid: c971f98b6cf903e4a89e352ea15e2605,
+        type: 3}
+      propertyPath: InitialVerticalLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c971f98b6cf903e4a89e352ea15e2605, type: 3}

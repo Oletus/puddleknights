@@ -24,6 +24,9 @@ public class Level : MonoBehaviour
         ChosenCharacter = Characters[currentCharacterIndex];
         GameManager.instance.Level = this;
 
+        // By this point all cape pieces should be spawned.
+        DropAllVerticalLayers();
+
         History = GetComponent<UndoHistorian>();
         CommitToUndoHistory();
     }

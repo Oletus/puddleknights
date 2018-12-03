@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using LPUnityUtils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelObject : MonoBehaviour
 {
-    private const float CAPE_THICKNESS = 0.1f;
+    private const float CAPE_THICKNESS = 0.05f;
 
     protected Level Level;
 
@@ -25,7 +26,7 @@ public class LevelObject : MonoBehaviour
 
     // This will offset the object vertically if it's standing on top of cape layers.
     private int _VerticalLayer = 0;
-    public int VerticalLayer
+    [UndoHistoryable] public int VerticalLayer
     {
         get
         {

@@ -21,6 +21,8 @@ public class Knight : CapeTile, ControllableCharacter
 
     [SerializeField] private SoundVariantSource MudStepSound;
 
+    [SerializeField] private int InitialVerticalLayer = 0;
+
     protected override void Awake()
     {
         base.Awake();
@@ -33,6 +35,8 @@ public class Knight : CapeTile, ControllableCharacter
                 MaterialUtils.SubstituteMaterial(renderer, "KnightCape", CapeMaterial);
             }
         }
+
+        VerticalLayer = InitialVerticalLayer;
 
         SpawnCapePieces();
     }
@@ -77,6 +81,7 @@ public class Knight : CapeTile, ControllableCharacter
         foreach (Vector2Int offset in CapePieceOffsets)
         {
             capeOwner.NextCapePiece = Instantiate(CapePrefab, capeOwner.transform.position + CapeOffsetToWorldSpace(offset), Quaternion.identity, Level.transform).GetComponent<CapeTile>();
+            capeOwner.NextCapePiece.VerticalLayer = InitialVerticalLayer;
             capeOwner.NextCapePiece.CapeMaterial = CapeMaterial;
             capeOwner.NextCapePiece.RotateFrontTowards(capeOwner);
             capeOwner = capeOwner.NextCapePiece;
