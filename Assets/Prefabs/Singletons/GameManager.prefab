@@ -219,8 +219,10 @@ MonoBehaviour:
   - Level_supersimple_intro
   - Level_A
   - Level_B
+  - Level_cape_tear_intro
   - Level_two_small_puddles
   - Level_tricky_river
+  - Level_win
   TitleUI: {fileID: 2813345242404750909}
 --- !u!114 &8495872357167796107
 MonoBehaviour:
