@@ -46,13 +46,17 @@ public class GameManager : Singleton<GameManager>
         Camera = Camera.main;
     }
 
-    void NextLevel()
+    public void PreviousLevel()
+    {
+        --currentLevelIndex;
+        WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
+        LoadLevelFromScene(levelScenes[currentLevelIndex]);
+    }
+
+    public void NextLevel()
     {
         ++currentLevelIndex;
-        if (currentLevelIndex >= levelScenes.Count)
-        {
-            currentLevelIndex = 0;
-        }
+        WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
 

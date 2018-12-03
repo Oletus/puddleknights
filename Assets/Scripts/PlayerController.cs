@@ -92,6 +92,16 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.Level.Undo();
     }
 
+    public void OnPreviousLevel()
+    {
+        GameManager.instance.PreviousLevel();
+    }
+
+    public void OnNextLevel()
+    {
+        GameManager.instance.NextLevel();
+    }
+
     private void OnDirectionInput(Vector2Int direction)
     {
         Level level = GameManager.instance.Level;
