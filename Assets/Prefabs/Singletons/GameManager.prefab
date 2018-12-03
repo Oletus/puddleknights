@@ -165,7 +165,7 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 4fd2e0554bdc1c446b785a900053e7c3, type: 3}
     Volume: 0.701
     Pitch: 1
-    Loop: 0
+    Loop: 1
 --- !u!1 &7254812100250083645
 GameObject:
   m_ObjectHideFlags: 0
