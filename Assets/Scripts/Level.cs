@@ -16,7 +16,7 @@ public class Level : MonoBehaviour
 
     [System.NonSerialized] public ControllableCharacter ChosenCharacter = null;
 
-    public void Awake()
+    public void Start()
     {
         LevelObjects = new List<LevelObject>(GetComponentsInChildren<LevelObject>(true));
         Characters = new List<ControllableCharacter>(GetComponentsInChildren<ControllableCharacter>(true));

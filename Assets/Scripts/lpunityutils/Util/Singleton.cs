@@ -23,7 +23,7 @@ public class Singleton<T> : MonoBehaviour
 			return false;
 		}
 		
-		if (!destroyOnLoad) {
+		if (!destroyOnLoad && gameObject.transform.parent == null) {
 			DontDestroyOnLoad (gameObject);
 		}
 		return true;
