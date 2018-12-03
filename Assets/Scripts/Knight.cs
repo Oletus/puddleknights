@@ -19,6 +19,8 @@ public class Knight : CapeTile, ControllableCharacter
 
     [SerializeField] private AudioSource MyLadySound;
 
+    [SerializeField] private SoundVariantSource MudStepSound;
+
     protected override void Awake()
     {
         base.Awake();
@@ -106,6 +108,12 @@ public class Knight : CapeTile, ControllableCharacter
 
         MoveCape(null, Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1, direction);
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
+
+        if (!Level.IsTileSuitableForLady(this.TileCoordinates) && Level.TileHasComponent<Puddle>(this.TileCoordinates) && this.MudStepSound != null)
+        {
+            this.MudStepSound.Play();
+        }
+
         return true;
     }
 }

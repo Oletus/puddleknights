@@ -27,11 +27,16 @@ namespace LPUnityUtils
             }
             set {
                 _Source = value;
-                _Source.clip = Clip;
-                _Source.volume = Volume;
-                _Source.pitch = Pitch;
-                _Source.loop = Loop;
+                SetToSource(_Source);
             }
+        }
+
+        public void SetToSource(AudioSource source)
+        {
+            source.clip = Clip;
+            source.volume = Volume;
+            source.pitch = Pitch;
+            source.loop = Loop;
         }
     }
 
