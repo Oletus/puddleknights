@@ -51,7 +51,7 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.006
+    m_Bias: 0.026
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
@@ -265,6 +265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3981746725875704509, guid: 8588122900cce6f47890eb7700db6b53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7619769920010761519, guid: 8588122900cce6f47890eb7700db6b53,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -384,6 +389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ButtonLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 980425032037531209, guid: 8588122900cce6f47890eb7700db6b53,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5395562672992425728, guid: 8588122900cce6f47890eb7700db6b53,
         type: 3}
