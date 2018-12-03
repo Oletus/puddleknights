@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public void Awake()
     {
+        Input.simulateMouseWithTouches = false;
         SelectedIndicator = Instantiate(SelectedIndicatorPrefab, transform);
         GetComponent<DiscretizedAxisInput>().OnDirectionInput += OnDirectionInput;
     }
