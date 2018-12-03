@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 945101065}
   - component: {fileID: 945101064}
   m_Layer: 0
-  m_Name: TextMeshPro
+  m_Name: CongratsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2822,7 +2822,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1904144779}
-  m_RootOrder: 26
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2859,8 +2859,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4291608320
+  m_fontColor: {r: 0, g: 0.75275004, b: 0.8018868, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5141,6 +5141,7 @@ Transform:
   - {fileID: 584749924}
   - {fileID: 1444218797}
   - {fileID: 11755038}
+  - {fileID: 945101063}
   - {fileID: 51130361}
   - {fileID: 2098787907}
   - {fileID: 2134219404}
@@ -5152,12 +5153,10 @@ Transform:
   - {fileID: 1713735047}
   - {fileID: 307296463}
   - {fileID: 1179420991}
-  - {fileID: 945101063}
   - {fileID: 1005159160}
   - {fileID: 786673678}
   - {fileID: 1630337817}
   - {fileID: 1634305830}
-  - {fileID: 590671702}
   - {fileID: 219986267}
   - {fileID: 79046482}
   - {fileID: 796961001}
@@ -5177,9 +5176,10 @@ Transform:
   - {fileID: 1550484136}
   - {fileID: 1609844653}
   - {fileID: 199457568}
+  - {fileID: 1016151152}
   - {fileID: 1168957291}
   - {fileID: 619112278}
-  - {fileID: 1016151152}
+  - {fileID: 590671702}
   - {fileID: 471644788}
   - {fileID: 427298499}
   - {fileID: 523382699}
