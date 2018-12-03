@@ -7,6 +7,7 @@ public class Lady : LevelObject, ControllableCharacter
     public Vector3 SelectedIndicatorPosition { get { return SelectedIndicatorMarker.transform.position; } }
 
     [SerializeField] private AudioSource LadyNoSound;
+    [SerializeField] private AudioSource LadyYaySound;
 
     public bool TryMove(Vector3Int direction)
     {
@@ -35,6 +36,10 @@ public class Lady : LevelObject, ControllableCharacter
 
         if (Level.TileHasComponent<Goal>(TileCoordinates))
         {
+            if (LadyYaySound != null)
+            {
+                LadyYaySound.Play();
+            }
             Level.ReachedGoal();
         }
         return true;
