@@ -50,24 +50,32 @@ public class GameManager : Singleton<GameManager>
         Camera = Camera.main;
     }
 
-    public void PreviousLevel()
+    public void PreviousLevel(bool allowLastLevel)
     {
         --currentLevelIndex;
         WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
+        if ( !allowLastLevel && currentLevelIndex == levelScenes.Count - 1 )
+        {
+            currentLevelIndex = levelScenes.Count - 2;
+        }
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
 
-    public void NextLevel()
+    public void NextLevel(bool allowLastLevel)
     {
         ++currentLevelIndex;
         WrapIndex.Wrap(ref currentLevelIndex, levelScenes);
+        if (!allowLastLevel && currentLevelIndex == levelScenes.Count - 1)
+        {
+            currentLevelIndex = 0;
+        }
         LoadLevelFromScene(levelScenes[currentLevelIndex]);
     }
 
     private IEnumerator NextLevelAfter(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        NextLevel();
+        NextLevel(true);
     }
 
     public void OnLevelWin()
