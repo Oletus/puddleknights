@@ -216,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelScenes:
-  - Level_supersimple_intro
   - Level_A
   - Level_B
   - Level_cape_tear_intro
