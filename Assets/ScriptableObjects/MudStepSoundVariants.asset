@@ -12,4 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebd25a50e39c1540963f48833d04ab0, type: 3}
   m_Name: MudStepSoundVariants
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - Name: step1
+    Clip: {fileID: 8300000, guid: 403a84e71f0f51b4dbb423d031f372f1, type: 3}
+    Volume: 0.716
+    Pitch: 1
+    Loop: 0
+  - Name: step2
+    Clip: {fileID: 8300000, guid: a3e22a6b46a92234a942400fde5193a6, type: 3}
+    Volume: 0.765
+    Pitch: 1
+    Loop: 0
+  - Name: step3
+    Clip: {fileID: 8300000, guid: eaacf7c12b77502488e35a04db6e8ae1, type: 3}
+    Volume: 0.752
+    Pitch: 1
+    Loop: 0
+  - Name: step4
+    Clip: {fileID: 8300000, guid: 6fc3760bc66ec7343ba0c5f5604916dc, type: 3}
+    Volume: 0.767
+    Pitch: 1
+    Loop: 0
