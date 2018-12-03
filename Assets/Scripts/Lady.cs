@@ -20,9 +20,16 @@ public class Lady : LevelObject, ControllableCharacter
             return false;
         }
 
+        Knight prevKnight = Level.GetKnightForCapeInTile(this.TileCoordinates);
+
         int newVerticalLayer = Level.GetTopVerticalLayer(this.TileCoordinates + direction) + 1;
         this.transform.position = Vector3Int.RoundToInt(this.transform.position + direction);
         VerticalLayer = newVerticalLayer;
+
+        if (prevKnight != null && Level.GetKnightForCapeInTile(this.TileCoordinates) == null)
+        {
+            prevKnight.PlayMyLadySound();
+        }
 
         this.RotationPivot.transform.rotation = Quaternion.LookRotation(direction);
 

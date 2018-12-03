@@ -321,4 +321,17 @@ public class CapeTile : LevelObject
         }
         return false;
     }
+
+    public bool IsConnectedToTile(Vector3Int coords)
+    {
+        if ( TileCoordinates == coords )
+        {
+            return true;
+        }
+        if ( NextCapePiece != null )
+        {
+            return NextCapePiece.IsConnectedToTile(coords);
+        }
+        return false;
+    }
 }

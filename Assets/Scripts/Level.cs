@@ -111,6 +111,22 @@ public class Level : MonoBehaviour
         return !hadPuddle || hadCape;
     }
 
+    public Knight GetKnightForCapeInTile(Vector3Int coords)
+    {
+        foreach (LevelObject obj in LevelObjects)
+        {
+            Knight knight = obj as Knight;
+            if (knight != null)
+            {
+                if (knight.IsConnectedToTile(coords))
+                {
+                    return knight;
+                }
+            }
+        }
+        return null;
+    }
+
     public bool TileHasComponent<T>(Vector3Int coords)
         where T : Component
     {
