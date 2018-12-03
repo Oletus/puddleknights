@@ -30,6 +30,11 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    private void Start()
+    {
+        AudioManager.instance.Play("thememusic");
+    }
+
     void Update()
     {
         Camera = Camera.main;
