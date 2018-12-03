@@ -5,13 +5,14 @@ using LPUnityUtils;
 
 public class CapeTile : LevelObject
 {
-    [UndoHistoryable] private CapeTile _NextCapePiece;
+    // Note: Protected just for UndoHistorian! Don't access from inheriting classes.
+    [UndoHistoryable] protected CapeTile _NextCapePiece;
     public CapeTile NextCapePiece { get { return _NextCapePiece; } set { _NextCapePiece = value; UpdateGeometryVariantBasedOnNextPiece(); UpdateModel(); } }
 
     private bool _TornFromFront;
-    [UndoHistoryable] private bool TornFromFront { get { return _TornFromFront;  } set { _TornFromFront = value; UpdateModel(); } }
+    [UndoHistoryable] protected bool TornFromFront { get { return _TornFromFront;  } set { _TornFromFront = value; UpdateModel(); } }
     private bool _TornFromBack;
-    [UndoHistoryable] private bool TornFromBack { get { return _TornFromBack; } set { _TornFromBack = value; UpdateModel(); } }
+    [UndoHistoryable] protected bool TornFromBack { get { return _TornFromBack; } set { _TornFromBack = value; UpdateModel(); } }
 
     [SerializeField] private CapePiecePrefabConfig PiecePrefabs;
 
